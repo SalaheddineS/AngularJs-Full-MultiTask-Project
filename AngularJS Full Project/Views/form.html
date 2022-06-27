@@ -1,0 +1,15 @@
+<form name="formulaire" ng-submit="contacters(contact1,contact2,contact3,contact4)" novalidate id="formu">
+    <input type="text" name="nom" placeholder="Enter your name" ng-model="contact1" ng-required="true">
+    <div ng-show="formulaire.nom.$touched && formulaire.nom.$invalid"><small style="color:red;display:block;text-align:center">
+    Enter a valid name</small></div>
+    <input type="text" name="prenom" placeholder="Enter your surname" ng-model="contact2" ng-required="true">
+    <div ng-show="formulaire.prenom.$touched && formulaire.prenom.$invalid"><small style="color:red;display:block;text-align:center">
+        Enter a valid surname</small></div>
+    <input type="number" name="age" placeholder="Enter your age" ng-model="contact3" ng-required="true">
+    <div ng-show="formulaire.age.$touched && formulaire.age.$invalid"><small style="color:red;display:block;text-align:center">
+        Enter a valid age</small></div>
+    <input type="email" name="mail" placeholder="Enter your Mail" ng-model="contact4" ng-required="true">
+    <div ng-show="formulaire.mail.$touched && formulaire.mail.$invalid"><small style="color:red;display:block;text-align:center">
+        Enter a valid Email</small></div>
+    <input type="submit" value="Submit" ng-disabled="formulaire.$invalid">
+</form>

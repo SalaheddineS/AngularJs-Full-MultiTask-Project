@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<base href="/">
+
+<head>
+    <title>TheNetNinja Angular Playlist</title>
+    <link href="content/css/styles.css" rel="stylesheet" type="text/css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="lib/angular-route.min.js"></script>
+    <script src="lib/angular-animate.min.js"></script>
+
+</head>
+
+<body>
+
+    <div ng-controller="Controller">
+        <div class="content">
+            <header ng-include="'js/Snippets.html'"></header>
+            <main ng-view></main>
+        </div>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+
+</html>

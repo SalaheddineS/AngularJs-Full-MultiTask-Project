@@ -1,0 +1,31 @@
+[{
+        "nom": "Meliodas",
+        "money": 22,
+        "etat": true,
+        "thumbnail": "Pictures/Meliodas.JPG"
+    },
+    {
+        "nom": "Violet",
+        "money": 18,
+        "etat": true,
+        "thumbnail": "Pictures/Violet.JPG"
+    },
+    {
+        "nom": "Eren",
+        "money": 13,
+        "etat": true,
+        "thumbnail": "Pictures/Eren.JPG"
+    },
+    {
+        "nom": "Mikasa",
+        "money": 51,
+        "etat": false,
+        "thumbnail": "Pictures/Mikasa.JPG"
+    },
+    {
+        "nom": "Gojo",
+        "money": 123,
+        "etat": true,
+        "thumbnail": "Pictures/Gojo.JPG"
+    }
+]

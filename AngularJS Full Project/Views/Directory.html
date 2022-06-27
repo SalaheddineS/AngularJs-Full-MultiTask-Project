@@ -1,0 +1,24 @@
+<button ng-click="orderN()">orderByName</button>
+<button ng-click="orderM()">OrderByMoney</button>
+<input ng-model="search" placeholder="Keywords For your search">
+<ul>
+    <li ng-repeat="item in tmp | orderBy: order |filter: search ">
+
+        <img ng-src="{{item.thumbnail}}" style="margin: -12px 10px 0 0;float:left;width: 50px;" ng-show="item.thumbnail"> {{ item.nom }} -
+        <div class="remove" ng-click="Remove(item)">x</div>
+        <span class="belt" style="background:green">{{item.money | currency:$}}</span>
+    </li>
+
+</ul>
+<ul>
+    <li>
+        <form ng-submit="Inserer(data1.nom,data1.money)" novalidate>
+            <label for="Nom">Name of the person:</label><br>
+            <input ng-model="data1.nom" ng-required="true" /><br>
+            <label for="Argent">Money to add:</label><br>
+            <input type="number" ng-model="data1.money" ng-required="true" />
+            <input type="submit" value="Ajouter">
+        </form>
+
+    </li>
+</ul>
